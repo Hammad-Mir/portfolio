@@ -1,0 +1,718 @@
+<!DOCTYPE HTML>
+<!--
+	Paradigm Shift by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Hammad's Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section class="intro">
+						<header>
+							<h1>Hammad Mir</h1>
+							<p>I am a Data Science graduate from Newcastle University with a passion for Machine Learning and Deep Learning.
+								I have worked on various projects as part of bachelor's and master's, leveraging concepts from statistics and AI.
+								I am focused on computer vision challenges in the healthcare sector, particularly in disease detection/diagnosis.</p>
+							<ul class="actions">
+								<li><a href="documents/Hammad Mir NCL CV (F-IB) 06.pdf" download="Hammad Mir CV.pdf" class="button primary large"><span class="label">Download CV</span></a></li>
+								<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
+							</ul>
+						</header>
+						<div class="content">
+							<span class="image fill" data-position="center"><img src="images/IMG_02_2.JPG" alt="" /></span>
+						</div>
+					</section>
+
+				<!-- Section -->
+					<section id="first">
+						<header>
+							<h2>Weakly Supervised Semantic Segmentation for Lung Adenocarcinoma histopathological images using Vision Transformers</h2>
+							<ul class="actions">
+								<!---<li><a href="https://github.com/Hammad-Mir/WSSS4LUAD" class="button large">GitHub</a></li>--->
+								<li><a href="https://github.com/Hammad-Mir/WSSS4LUAD" class="button primary large">GitHub</a></li>
+							</ul>
+						</header>
+						<div class="content">
+							<p>It is a challenge to perform weakly supervised semantic segmentation (WSSS),
+								especially when pixel-level prediction is being supervised by image-level labels. A
+								Class Activation Map (CAM) is typically created to offer pixel-level pseudo labels
+								to fill the space between them. Convolutional neural networks' CAMs experience
+								partial activation or activation of only the most discriminative regions. On the other
+								hand, transformer-based approaches are very good at investigating global context
+								with long-range dependency modelling, perhaps resolving the "partial activation"
+								problem. In this study, we evaluate the efficacy of several transformer networks for
+								the task and present the first transformer-based WSSS technique for histopathology
+								pictures. Unlike other CNN-based techniques, we train a segmentation model for
+								semantic segmentation using high-quality pseudo segmentation masks created by
+								Vision Transformer (ViT), a classifier. Additionally, we adapt the Pixel-Adaptive
+								Refinement module, which incorporates low-level picture appearance information
+								to refine the pseudo labels, to assure accuracy and local consistency. Extensive
+								testing on the WSSS4LUAD dataset showed that this method can successfully
+								segment histopathological images using only image-level labels.</p>
+							<span class="image main"><img src="images/wss4luad.jpeg" alt="" /></span>
+						</div>
+					</section>
+
+				<!-- Section -->
+				<section id="second">
+					<header>
+						<h2>Skin Lesion Identification Using Deep Learning</h2>
+						<ul class="actions">
+							<!---<li><a href="https://github.com/Hammad-Mir/WSSS4LUAD" class="button large">GitHub</a></li>--->
+							<li><a href="https://github.com/Hammad-Mir/skin_cancer_detection" class="button primary large">GitHub</a></li>
+						</ul>
+					</header>
+					<div class="content">
+						<p>Skin cancer is defined as the uncontrolled growth of abnormal cells in the epidermis, the skin's
+							outermost layer, caused by unrepaired DNA damage that results in mutations. Skin cancer is one
+							of the most frequent types of cancer in the globe. The three most frequent types of skin cancer are
+							squamous cell carcinoma, basal cell carcinoma, and melanoma. The clinical therapy of a skin
+							lesion is mostly determined by its prompt discovery. The prevalence of skin cancer is on the rise,
+							particularly melanoma, which is aggressive due to its high metastatic rate. As a result, early
+							detection is crucial for therapy before the beginning of malignancy. To overcome this issue,
+							medical imaging is employed for dermoscopic image processing and classification/identification.
+							This gives an opportunity to create an automated model for identifying skin lesions. Using
+							Convolutional Neural Networks, we investigated an automated technique for lesion diagnosis
+							(CNN). We trained our model using Kaggle's "Skin Cancer MNIST: HAM10000" dataset, which
+							contains a huge collection of multi-source dermoscopic pictures of pigmented lesions. We did data
+							augmentation on the training data to boost generalization and classification performance. We
+							employed the VGG16 and ResNet50 architectures for skin lesion picture classification and got the
+							greatest accuracy and f1 score of 0.7651 and 0.7569 for ResNet50 with augmented data,
+							respectively.</p>
+						<span class="image main"><img src="images/ML_SkinCancer.jpg" alt="" /></span>
+					</div>
+				</section>
+
+				<!-- Section -->
+				<section id="third">
+					<header>
+						<h2>NYC Taxi Trips Analysis</h2>
+						<ul class="actions">
+							<!---<li><a href="https://github.com/Hammad-Mir/WSSS4LUAD" class="button large">GitHub</a></li>--->
+							<li><a href="https://github.com/Hammad-Mir/NYC_Taxi_Trips_analysis" class="button primary large">GitHub</a></li>
+						</ul>
+					</header>
+					<div class="content">
+						<p>In this project, I worked on analyzing a large dataset of taxi trips in New York City using Apache Spark,
+							a popular big data processing framework. The goal of the project was to gain insights into the dataset by
+							summarizing interzonal travel, and ranking zones by traffic, passenger volume, and profitability. I also
+							recorded the execution time of the pipeline under different conditions and analyze the effect of dataset
+							size ('S', 'M', 'L', 'XL', 'XXL'), dataset format (parquet and delta), and task complexity on pipeline
+							performance. I evaluated the resulting execution times to comment on the effect of dataset size, dataset
+							format, and task complexity on analysis pipeline performance.
+							
+							To start, I performed data preprocessing and cleaning to ensure the data was ready for analysis. Then, I
+							computed new columns such as zone names and unit profitability for each trip. Next, I summarized interzonal
+							travel by building a graph data structure of zone-to-zone traffic and obtained aggregate information about
+							all trips between those zones. I used this graph to rank zones by traffic, passenger volume, and profitability.
+							Finally, I recorded the execution time of the entire pipeline and the pipeline without task 'Removing outliers
+							using the modified z-score' on the two tables, for all dataset sizes and formats. I analyzed the resulting
+							execution times and commented on the effect of dataset size, dataset format, and task complexity on pipeline performance.
+							
+							Overall, this project was a valuable learning experience that helped me develop my skills in big data analytics
+							and data processing. This project help us understand how the pipeline performs under different conditions and
+							how we can optimize the pipeline for better performance. The insights gained from this analysis could be used to
+							inform policy decisions related to the taxi industry in New York City.</p>
+						<span class="image main"><img src="images/NYC_Taxi.jpg" alt="" /></span>
+					</div>
+				</section>
+
+				<!-- Section -->
+				<section id="fourth">
+					<header>
+						<h2>Colon Cancer Segmentation</h2>
+						<ul class="actions">
+							<!---<li><a href="https://github.com/Hammad-Mir/WSSS4LUAD" class="button large">GitHub</a></li>--->
+							<li><a href="https://github.com/Hammad-Mir/colon_cancer_cell_segmentation" class="button primary large">GitHub</a></li>
+						</ul>
+					</header>
+					<div class="content">
+						<p>
+							The aim of this technical project is to design, implement and test an image informatics approach for automatic
+							colon cancer cells segmentation in microscopy imagery using image informatics methods/techniques. To assess the
+							accuracy and the quality of the cells (nuclei and cytoplasm) segmentation approach, we compare the nuclei and
+							cytoplasm segmentation results with the golden standard manual nuclei and cytoplasm segmentation results, using
+							Jaccard Score metric.
+
+							There are a slew of image segmentation techniques that can be used to segment images. The most common techniques are:
+
+							<ul>
+								<li>Threshold Based Segmentation</li>
+								<li>Edge Based Segmentation</li>
+								<li>Region-Based Segmentation</li>
+								<li>Clustering Based Segmentation</li>
+								<li>Artificial Neural Network Based Segmentation</li>
+							  </ul>
+							
+							  For the scope of this project, we focused on the Threshold and Clustering-based Segmentation technique.
+
+							  The dataset consists of separate cytoplasm and nuclei colon cancer cells microscopic images. There are 12 images
+							  for each of the two classes and the golden standard manual nuclei and cytoplasm segmentation results (masks) are
+							  also provided. Each image is a 512x512 pixel grayscale image.
+
+							  Upon comparing the segmentation results of the two methods on cytoplasm and nuclei images separately, we found that
+							  the mean thresholding on preprocessed images worked the best for cytoplasm images with an average jaccard score of
+							  0.86. Consecutively, the multi Otsu's thresholding on preprocessed image worked the best for nuclei images with the
+							  average jaccard score of 0.88, beating the average jaccard score of 0.76 from k-means clustering.
+						</p>
+						<span class="image main"><img src="images/ColonCancer.jpg" alt="" /></span>
+					</div>
+				</section>
+
+				<!-- Section Online_Learning.jpg -->
+				<section id="fifth">
+					<header>
+						<h2>Future Learn Cyber Security Course Learning Analysis Report</h2>
+						<ul class="actions">
+							<!---<li><a href="https://github.com/Hammad-Mir/WSSS4LUAD" class="button large">GitHub</a></li>--->
+							<li><a href="https://github.com/Hammad-Mir/online_couse_learning_analytics" class="button primary large">GitHub</a></li>
+						</ul>
+					</header>
+					<div class="content">
+						<p>
+							This project focuses of the analysis of the learner data for Cyber Security massive open online certificate (MOOC) by Newcastle
+							University. It also demonstrates the advantages of repeatable data research with r markdown. The data
+							collection comprises 62.csv files, from which enrollment data has been utilized for analysis with target
+							demographic understanding as the overall objective.
+							The main objective of this analysis is to understand the target demographic. Our aim is to develop insights of
+							the learners enrolled in the course. This analysis will helpful in developing the course to have a wider reach
+							and be more appealing to the learners. We analyse the user information such as location data, gender, age,
+							education, etc. to generate these insights. This gives us a better understanding of “Who” the learners are so
+							that the course can be developed to the business needs and market demand.
+
+							We followed the Cross-industry standard process for data mining (CRISP-DM) methodology for our analysis, which is an
+							open standard process model that describes common approaches for data mining and analysis and is the most widely-used analytics model.
+
+							The dataset for Cyber Security: Safety at Home, Online, in Life course includes 62 with files containing user
+							data such as follows: - Archetype survey - Enrolments - Leaving survey response - Question response - Step
+							activity - Team members - Video stats - Weekly sentiment survey responses
+							The dataset comprises data gathered from seven runs of the course. During our analysis, we concentrated
+							solely on the enrolment data, which contains information about each learner such as gender, age, education, nation, and so on.
+
+							Following the CRISP-DM model, we performed our analysis in more than one cycle as explained below, with
+							our main business objective being target demographic understanding:
+							
+							<ul>
+
+								<li>Cycle 1: Where learners are from.</li>
+								<li>Cycle 2: Enrolments over 7 runs.</li>
+								<li>Cycle 3: Who the learners are.</li>
+
+
+							</ul>
+						</p>
+						<span class="image main"><img src="images/OnlineLearning.jpg" alt="" /></span>
+					</div>
+				</section>
+
+				<!-- Section ALL -->
+				
+				<section id="sixth">
+					<header>
+						<h2>ISLR_gene-expression clustering and regression analysis</h2>
+						<ul class="actions">
+							<!---<li><a href="https://github.com/Hammad-Mir/WSSS4LUAD" class="button large">GitHub</a></li>--->
+							<li><a href="https://github.com/Hammad-Mir/ISLR_gene-expression_clustering_regression" class="button primary large">GitHub</a></li>
+						</ul>
+					</header>
+					<div class="content">
+						<p>
+							In this project, I conducted a cluster analysis using hierarchical and k-means clustering on the ISLR gene expression dataset, 
+							consisting of 40 tissue samples with measurements on 1,000 genes. Additionally, I performed linear regression on the diabetes 
+							data to develop a model for predicting disease progression on the basis of one or more of the 10 baseline variables. I split 
+							the data into a training and validation set, computed the test error for a multiple linear regression model, a 6-predictor 
+							model, and a ridge regression model with cross-validation to identify the optimal tuning parameter. I also generated a plot 
+							of the regression coefficients for different values of the tuning parameter and compared the test errors to determine the best model.
+						</p>
+						<span class="image main"><img src="images/ISL_Gene.jpg" alt="" /></span>
+					</div>
+				</section>
+
+				<!-- Section ISL_Gene.jpg -->
+
+				<section id="seventh">
+					<header>
+						<h2>Breast Cancer Detection</h2>
+						<ul class="actions">
+							<!---<li><a href="https://github.com/Hammad-Mir/WSSS4LUAD" class="button large">GitHub</a></li>--->
+							<li><a href="https://github.com/Hammad-Mir/breast_cancer_detection" class="button primary large">GitHub</a></li>
+						</ul>
+					</header>
+					<div class="content">
+						<p>
+							In this project, I built a classifier for identifying benign or malignant breast tissue samples based on cytological characteristics.
+							The dataset used contains 699 tissue samples, each classified into benign or malignant classes, and nine cytological characteristics 
+							on a 1 to 10 scale. The project begins with exploratory data analysis, including data cleaning and numerical and graphical summaries. 
+							Various classification methodologies, such as logistic regression, regularization with logistic regression, and discriminant analysis, 
+							were implemented to identify the best classification model based on their performance on predictive accuracy or error rate.
+
+							Skills demonstrated: Data pre-processing, exploratory data analysis, classification methodologies (logistic regression, regularization
+							with logistic regression, discriminant analysis), data visualization, statistical analysis.
+
+							Tools and technologies used: R programming language, RStudio IDE, mlbench package, ggplot2 package, caret package, glmnet package, MASS package.
+
+							Outcome: Linear Discriminant Analysis was found to be the best classification model for this dataset, with a slight drop in accuracy for the 6 
+							predictor model. However, when using priors that better reflect the real-world prevalence of breast cancer, Quadratic Discriminant Analysis performed 
+							the best in terms of classification accuracy.
+						</p>
+						<span class="image main"><img src="images/BreastCancer.jpg" alt="" /></span>
+					</div>
+				</section>
+
+				<!-- Section -->
+					<section>
+						<header>
+							<h2>Other Projects</h2>
+							
+						</header>
+						<div class="content">
+							<p><strong>Here are some of the other projects that I have worked on.</strong></p>
+				
+				<!-- Section-->
+				<section id="eighth">
+					<header>
+						<h2>Palmer Penguin Statistical Aanalysis</h2>
+						<ul class="actions">
+							<!---<li><a href="https://github.com/Hammad-Mir/WSSS4LUAD" class="button large">GitHub</a></li>--->
+							<li><a href="https://github.com/Hammad-Mir/palmer_penguin_statistical_analysis" class="button primary large">GitHub</a></li>
+						</ul>
+					</header>
+					<div class="content">
+						<span class="image main"><img src="images/PalmerPenguins_1.jpg" alt="" /></span>
+					</div>
+				</section>
+
+				<!-- Section -->
+				<section id="ninth">
+					<header>
+						<h2>Summarising Multivariate Data and PCA</h2>
+						<ul class="actions">
+							<!---<li><a href="https://github.com/Hammad-Mir/WSSS4LUAD" class="button large">GitHub</a></li>--->
+							<li><a href="https://github.com/Hammad-Mir/Summarising_Multivariate_Data_and_PCA" class="button primary large">GitHub</a></li>
+						</ul>
+					</header>
+					<div class="content">
+						<span class="image main"><img src="images/PCA_1.jpg" alt="" /></span>
+					</div>
+				</section>
+
+				<!-- Section -->
+				<section id="ninth">
+				<header>
+						<h2>Bird Classification</h2>
+						<ul class="actions">
+							<li><a href="https://github.com/Hammad-Mir/bird_classification" class="button primary large">GitHub</a></li>
+						</ul>
+					</header>
+					<div class="content">
+						<span class="image main"><img src="images/BirdsClassification_1.jpg" alt="" /></span>
+					</div>
+				</section>
+
+				<!-- Section -->
+				<section id="tenth">
+					<header>
+							<h2>Acute Lymphoblastic Leukemia (ALL) Detection using Deep Learning models</h2>
+							<ul class="actions">
+								<li><a href="https://github.com/Hammad-Mir/all" class="button primary large">GitHub</a></li>
+							</ul>
+						</header>
+						<div class="content">
+							<span class="image main"><img src="images/all.jpg" alt="" /></span>
+						</div>
+					</section>
+
+				<!-- Section -->
+				<section id="eleventh">
+					<header>
+							<h2>ALL-Net: Acute Lymphoblastic Leukemia Detection using CNN utilizing the Patch-wise Concept</h2>
+							<ul class="actions">
+								<li><a href="https://github.com/Hammad-Mir/all_pw" class="button primary large">GitHub</a></li>
+							</ul>
+						</header>
+						<div class="content">
+							<span class="image main"><img src="images/ALL_NET.png" alt="" /></span>
+						</div>
+					</section>
+				
+				<!-- Section -->
+				<section>
+					<header>
+						<h2>Skills</h2>
+					</header>
+					<div class="content">
+						<p> </p>
+						<ul class="feature-icons">
+							<li class="icon solid fa-calculator"><strong>Mathematics</strong> (calculus, linear algebra, statistics, probability)</li>
+							<li class="icon solid fa-code"><strong>Python</strong> (Numpy, Pandas, Matplotlib, Seaborn, Scikit Learn, TensorFlow, Keras, PyTorch)</li>
+							<li class="icon solid fa-code"><strong>R</strong> (TidyVerse, dplyr, ggplot, Tidy, plotly, Carat)</li>
+							<li class="icon solid fa-cogs"><strong>Machine Learning</strong> (linear + logistic regression, KNN, K-means, PCA, Bagging, Boosting, Decision Trees)</li>
+							<li class="icon solid fa-cogs"><strong>Deep Learning</strong> (MLP, ANN, CNN, RNN-LSTM, transformers, vision transformers)</li>
+							<li class="icon solid fa-code"><strong>Version Control</strong> (Git)</li>
+							<li class="icon solid fa-code"><strong>Database/Big Data</strong> (SQL, Apache Spark)</li>
+							<li class="icon solid fa-code"><strong>Image Informatics</strong> (image sampling, image quality, transformations, filtering, object detection, segmentation)</li>
+							<li class="icon solid fa-image"><strong>Data Visualization</strong> (matplotlib, seaborn, Power BI)</li>
+						</ul>
+						<p> </p>
+					</div>
+				</section>
+
+				<!-- Elements -->
+				<!--
+					<section>
+						<header>
+							<h2>Elements</h2>
+						</header>
+						<div class="content">
+
+							<section>
+								<header>
+									<h3>Text</h3>
+								</header>
+								<div class="content">
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<hr />
+									<h5>Blockquote</h5>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h5>Preformatted</h5>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+  print 'Iteration ' + i;
+  deck.shuffle();
+  i++;
+}
+
+print 'Sorted in ' + i + ' iterations.';</code></pre>
+								</div>
+							</section>
+
+							<section>
+								<header>
+									<h3>Lists</h3>
+								</header>
+								<div class="content">
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</div>
+							</section>
+
+							<section>
+								<header>
+									<h3>Table</h3>
+								</header>
+								<div class="content">
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</div>
+							</section>
+
+							<section>
+								<header>
+									<h3>Buttons</h3>
+								</header>
+								<div class="content">
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button large">Large</a></li>
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</div>
+							</section>
+
+							<section>
+								<header>
+									<h3>Form</h3>
+								</header>
+								<div class="content">
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</div>
+							</section>
+
+						</div>
+					</section>
+				-->
+
+				<!-- Section -->
+					<section>
+						<header>
+							<h2>Get in touch</h2>
+						</header>
+						<div class="content">
+							<ul class="items">
+								<li>
+									<h3>Email</h3>
+									<a href="#">erhammadmir@gmail.com</a>
+								</li>
+								<li>
+									<h3>Phone</h3>
+									<a href="#">+44 7425 504649</a>
+								</li>
+								<li>
+									<h3>Address</h3>
+									<span>Newcastle Upon Tyne, United Kingdom</span>
+								</li>
+								<li>
+									<h3>Socials</h3>
+									<ul class="icons">
+										<li><a href="https://twitter.com/hammaduleaman" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="https://www.facebook.com/hammaduleaman" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="https://www.instagram.com/hammad_ul_eaman_mir/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="https://www.linkedin.com/in/hammad-mir/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+										<li><a href="https://github.com/Hammad-Mir" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						
+						<!---
+						<footer>
+							<ul class="items">
+								<li>
+									<h3>Email</h3>
+									<a href="#">information@untitled.ext</a>
+								</li>
+								<li>
+									<h3>Phone</h3>
+									<a href="#">(000) 000-0000</a>
+								</li>
+								<li>
+									<h3>Address</h3>
+									<span>1234 Somewhere Road, Nashville, TN 00000</span>
+								</li>
+								<li>
+									<h3>Elsewhere</h3>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+										<li><a href="#" class="icon brands fa-codepen"><span class="label">Codepen</span></a></li>
+									</ul>
+								</li>
+							</ul>
+						</footer>
+
+						-->
+					</section>
+
+				<!-- Copyright -->
+					<div class="copyright">&copy; Untitled. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
