@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="stylesheet" href="assets/css/refinement.css">
 </head>
 <body>
   <a class="skip-link" href="#content">Skip to content</a>
@@ -30,7 +31,7 @@
         <div>
           <p class="eyebrow">Computer Vision Research Engineer</p>
           <h1>I build intelligent systems that turn complex visual information into structured knowledge.</h1>
-          <p class="lede">My work connects research with deployable engineering—from industrial drawings and document intelligence to medical imaging and representation learning.</p>
+          <p class="lede">My work connects research with deployable engineering—from representation learning and industrial vision to agentic retrieval systems, document intelligence, and medical imaging.</p>
           <div class="actions"><a class="button" href="projects.html">Explore selected work <span aria-hidden="true">→</span></a><a class="text-link" href="research.html">Research direction</a></div>
         </div>
         <figure class="portrait"><img src="images/IMG_02_2.JPG" alt="Portrait of Hammad Mir"><figcaption>Research, systems, and the work between them.</figcaption></figure>
@@ -38,18 +39,18 @@
     </section>
 
     <section class="section intro">
-      <div class="shell split">
-        <p class="eyebrow">A research-engineering practice</p>
-        <div><h2>Building complete systems, not isolated models.</h2><p>I work from the data and problem definition through evaluation, deployment, and the downstream decisions a system needs to support. The throughline is an interest in making difficult visual information useful.</p><a class="text-link" href="about.html">More about my approach</a></div>
+      <div class="shell intro-layout">
+        <p class="eyebrow">Approach</p>
+        <h2>Building complete systems, not isolated models.</h2><p class="lede">I work from the data and problem definition through evaluation, deployment, and the downstream decisions a system needs to support. The throughline is an interest in making difficult visual information useful.</p><a class="text-link" href="about.html">More about my approach</a>
       </div>
     </section>
 
     <section class="section" aria-labelledby="themes-heading">
       <div class="shell"><div class="section-heading"><p class="eyebrow">Research themes</p><h2 id="themes-heading">Questions I keep returning to</h2></div>
         <div class="three-up">
-          <article class="theme"><p class="number">01</p><h3>Understanding documents</h3><p>Turning engineering drawings and safety documents into reliable, machine-readable structure.</p></article>
+          <article class="theme"><p class="number">01</p><h3>Learning representations</h3><p>Developing representations that remain useful when labels are scarce and the world changes.</p></article>
           <article class="theme"><p class="number">02</p><h3>Understanding biology</h3><p>Using machine learning to investigate visual patterns in pathology and biomedical imaging.</p></article>
-          <article class="theme"><p class="number">03</p><h3>Learning representations</h3><p>Developing representations that remain useful when labels are scarce and the world changes.</p></article>
+          <article class="theme"><p class="number">03</p><h3>Understanding documents</h3><p>Turning engineering drawings and safety documents into reliable, machine-readable structure.</p></article>
         </div>
       </div>
     </section>
@@ -57,9 +58,9 @@
     <section class="section muted" aria-labelledby="work-heading">
       <div class="shell"><div class="section-heading row"><div><p class="eyebrow">Featured work</p><h2 id="work-heading">Systems with a clear reason to exist.</h2></div><a class="text-link" href="projects.html">All projects</a></div>
         <div class="project-list">
-          <article class="project-feature"><div><p class="meta">Industrial computer vision · 2025–26</p><h3>Qura: P&amp;ID understanding</h3><p>Digitizing scanned process-and-instrumentation drawings into structured equipment, connectivity, and flow graphs for downstream analysis.</p><ul class="inline-tags"><li>99.5% known-style accuracy</li><li>YOLOv8 + ConvNeXt</li><li>Graph construction</li></ul><a class="text-link" href="projects.html#qura">Read the case study</a></div><img src="images/arch.png" alt="System architecture diagram for an industrial drawing understanding pipeline" loading="lazy"></article>
-          <article class="project-feature reverse"><div><p class="meta">Document intelligence · 2025–26</p><h3>Structured data from safety diagrams</h3><p>An asynchronous extraction service that combines OCR, classical vision, and vision-language models to recover safety information from complex engineering documents.</p><ul class="inline-tags"><li>Up to 7800 × 4500 px</li><li>Human-review ready</li><li>FastAPI + Celery</li></ul><a class="text-link" href="projects.html#dtwin">See the system</a></div><img src="images/professional-portfolio.png" alt="Interface showing a document intelligence workflow" loading="lazy"></article>
-          <article class="project-feature"><div><p class="meta">Representation learning · 2024–25</p><h3>Behavioural biometrics</h3><p>Investigating how high-frequency typing and pressure signals can authenticate a person under the realistic constraint of unseen impostors.</p><ul class="inline-tags"><li>2,500+ study samples</li><li>76% one-class accuracy</li><li>Time-series ML</li></ul><a class="text-link" href="projects.html#biometrics">Project details</a></div><img src="images/portfolio.png" alt="Abstract portfolio mark" loading="lazy"></article>
+          <article class="project-feature"><div><p class="meta">Industrial computer vision · 2025–26</p><h3>Qura: P&amp;ID understanding</h3><p>Digitizing scanned process-and-instrumentation drawings into structured equipment, connectivity, and flow graphs for downstream analysis.</p><ul class="inline-tags"><li>99.5% known-style accuracy</li><li>YOLOv8 + ConvNeXt</li><li>Graph construction</li></ul><a class="text-link" href="projects.html#qura">Read the case study</a></div><div class="project-visual" role="img" aria-label="Placeholder for a Qura system visual"><span>Project visual forthcoming</span><small>Qura · P&amp;ID understanding</small></div></article>
+          <article class="project-feature reverse"><div><p class="meta">Agentic retrieval · 2025–26</p><h3>IntelliMaint: maintenance intelligence</h3><p>An agentic hybrid-search system that grounds maintenance assistance in manuals, device context, and the document a technician actually needs.</p><ul class="inline-tags"><li>BM25 + semantic search</li><li>LangGraph</li><li>RRF + reranking</li></ul><a class="text-link" href="projects.html#intellimaint">See the system</a></div><div class="project-visual" role="img" aria-label="Placeholder for an IntelliMaint system visual"><span>Project visual forthcoming</span><small>IntelliMaint · agentic retrieval</small></div></article>
+          <article class="project-feature"><div><p class="meta">Document intelligence · 2025–26</p><h3>Structured data from safety diagrams</h3><p>An asynchronous extraction service that combines OCR, classical vision, and vision-language models to recover safety information from complex engineering documents.</p><ul class="inline-tags"><li>Up to 7800 × 4500 px</li><li>Human-review ready</li><li>FastAPI + Celery</li></ul><a class="text-link" href="projects.html#dtwin">See the system</a></div><div class="project-visual" role="img" aria-label="Placeholder for a document intelligence system visual"><span>Project visual forthcoming</span><small>Document intelligence pipeline</small></div></article>
         </div>
       </div>
     </section>
